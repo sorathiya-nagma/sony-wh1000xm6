@@ -1,0 +1,93 @@
+@import "tailwindcss/index.css";
+
+@theme {
+  --color-void: #050505;
+  --color-surface: #0A0A0C;
+  --color-surface-light: #121217;
+  --color-sony-blue: #0050FF;
+  --color-sony-cyan: #00D6FF;
+  --color-sony-darkblue: #002B99;
+}
+
+body {
+  background-color: #050505;
+  color: rgba(255, 255, 255, 0.9);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Apple-style gradient text */
+.text-gradient-apple {
+  background: linear-gradient(180deg, #FFFFFF 30%, rgba(255, 255, 255, 0.65) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-sony {
+  background: linear-gradient(180deg, #FFFFFF 20%, #00D6FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #00D6FF 0%, #0050FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism surfaces */
+.glass-nav {
+  background: rgba(5, 5, 5, 0.75);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(14, 14, 18, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(20, 20, 28, 0.75);
+  border-color: rgba(0, 214, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px -10px rgba(0, 80, 255, 0.2);
+}
+
+/* Glowing button with subtle gradient border */
+.btn-sony-primary {
+  position: relative;
+  background: linear-gradient(135deg, #0050FF 0%, #0036B8 100%);
+  border: 1px solid rgba(0, 214, 255, 0.4);
+  box-shadow: 0 0 24px -4px rgba(0, 80, 255, 0.45);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-sony-primary:hover {
+  background: linear-gradient(135deg, #0d5cff 0%, #0042db 100%);
+  box-shadow: 0 0 32px 0px rgba(0, 214, 255, 0.6);
+  transform: scale(1.02);
+}
+
+.btn-sony-secondary {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.3s ease;
+}
+
+.btn-sony-secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* Subtle radial glow for background voids */
+.void-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(0, 80, 255, 0.08) 0%, rgba(5, 8, 21, 0.04) 45%, rgba(5, 5, 5, 0) 70%);
+}
