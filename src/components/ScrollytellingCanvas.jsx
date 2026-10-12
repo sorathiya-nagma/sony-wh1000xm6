@@ -48,7 +48,24 @@ export default function ScrollytellingCanvas({ onOpenPreOrder }) {
     const clampedIndex = Math.max(0, Math.min(TOTAL_FRAMES - 1, Math.floor(frameIndex)));
     let img = imagesRef.current[clampedIndex];
 
-    // Fallback hierarchy: target frame -> frame 0 -> master hero image
+    // Smarter Fallback hierarchy: Find nearest loaded frame if current frame is loading
+    if (!img || !img.complete || img.naturalWidth === 0) {
+      if (Array.isArray(imagesRef.current) && imagesRef.current.length > 0) {
+        // Search backwards and forwards for nearest loaded frame
+        for (let offset = 1; offset < TOTAL_FRAMES; offset++) {
+          const prev = clampedIndex - offset;
+          const next = clampedIndex + offset;
+          if (prev >= 0 && imagesRef.current[prev]?.complete && imagesRef.current[prev]?.naturalWidth > 0) {
+            img = imagesRef.current[prev];
+            break;
+          }
+          if (next < TOTAL_FRAMES && imagesRef.current[next]?.complete && imagesRef.current[next]?.naturalWidth > 0) {
+            img = imagesRef.current[next];
+            break;
+          }
+        }
+      }
+    }
     if (!img || !img.complete || img.naturalWidth === 0) {
       img = imagesRef.current[0];
     }

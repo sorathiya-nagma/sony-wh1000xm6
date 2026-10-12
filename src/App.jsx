@@ -15,7 +15,7 @@ export default function App() {
   const [preOrderOpen, setPreOrderOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[#070B14] text-white selection:bg-sony-blue selection:text-white overflow-x-hidden">
+    <div className="relative min-h-screen bg-[#070B14] text-white selection:bg-sony-blue selection:text-white">
       {/* Dynamic Ambient Background Illumination Layers */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute -top-40 left-1/4 w-[750px] h-[750px] bg-cyan-500/10 rounded-full blur-[180px]" />
