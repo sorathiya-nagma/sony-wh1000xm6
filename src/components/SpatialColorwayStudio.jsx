@@ -43,7 +43,7 @@ export default function SpatialColorwayStudio() {
   ];
 
   return (
-    <section className="relative py-28 md:py-36 bg-void border-t border-white/[0.06] overflow-hidden">
+    <section id="materials" className="relative py-28 md:py-36 bg-void border-t border-white/[0.06] overflow-hidden">
       
       {/* Background Radial Glow */}
       <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[600px] h-[600px] bg-sony-blue/10 rounded-full blur-[170px] pointer-events-none" />
