@@ -30,7 +30,7 @@ An Apple/Awwwards-level cinematic product reveal and interactive engineering sho
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/sony-wh1000xm6.git
+git clone https://github.com/sorathiya-nagma/sony-wh1000xm6.git
 cd sony-wh1000xm6
 ```
 
