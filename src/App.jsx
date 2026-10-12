@@ -15,7 +15,15 @@ export default function App() {
   const [preOrderOpen, setPreOrderOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-void text-white selection:bg-sony-blue selection:text-white">
+    <div className="relative min-h-screen bg-[#070B14] text-white selection:bg-sony-blue selection:text-white overflow-x-hidden">
+      {/* Dynamic Ambient Background Illumination Layers */}
+      <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="absolute -top-40 left-1/4 w-[750px] h-[750px] bg-cyan-500/10 rounded-full blur-[180px]" />
+        <div className="absolute top-1/3 -right-40 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[200px]" />
+        <div className="absolute top-2/3 -left-40 w-[700px] h-[700px] bg-indigo-500/08 rounded-full blur-[190px]" />
+        <div className="absolute -bottom-40 right-1/4 w-[900px] h-[900px] bg-cyan-400/08 rounded-full blur-[220px]" />
+      </div>
+
       {/* Apple-style Translucent Navbar */}
       <Navbar onOpenPreOrder={() => setPreOrderOpen(true)} />
 

@@ -431,7 +431,7 @@ export default function ScrollytellingCanvas({ onOpenPreOrder }) {
               pointerEvents: beat2Opacity > 0.5 ? 'auto' : 'none'
             }}
           >
-            <div className="glass-card p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-2xl bg-black/60 shadow-2xl">
+            <div className="liquid-glass p-6 md:p-8 rounded-3xl shadow-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono text-sony-cyan uppercase tracking-widest mb-3">
                 <Layers className="w-3.5 h-3.5" />
                 <span>ACOUSTIC ARCHITECTURE</span>
@@ -471,7 +471,7 @@ export default function ScrollytellingCanvas({ onOpenPreOrder }) {
               pointerEvents: beat3Opacity > 0.5 ? 'auto' : 'none'
             }}
           >
-            <div className="glass-card p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-2xl bg-black/60 shadow-2xl">
+            <div className="liquid-glass p-6 md:p-8 rounded-3xl shadow-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono text-sony-cyan uppercase tracking-widest mb-3">
                 <Mic2 className="w-3.5 h-3.5" />
                 <span>INTELLIGENT ISOLATION</span>
@@ -527,7 +527,7 @@ export default function ScrollytellingCanvas({ onOpenPreOrder }) {
               pointerEvents: beat4Opacity > 0.5 ? 'auto' : 'none'
             }}
           >
-            <div className="glass-card p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-2xl bg-black/60 shadow-2xl">
+            <div className="liquid-glass p-6 md:p-8 rounded-3xl shadow-2xl">
               <div className="inline-flex items-center gap-2 text-xs font-mono text-sony-cyan uppercase tracking-widest mb-3">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>SONY ACOUSTIC HERITAGE</span>
