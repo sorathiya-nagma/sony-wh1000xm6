@@ -27,14 +27,14 @@ export default function PreOrderDrawer({ isOpen, onClose }) {
       
       {/* Modal Surface */}
       <div 
-        className="relative w-full max-w-2xl bg-[#09090D] border border-white/15 rounded-3xl p-6 sm:p-10 shadow-2xl overflow-hidden"
+        className="liquid-glass relative w-full max-w-2xl rounded-3xl p-6 sm:p-10 shadow-2xl overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 p-2 rounded-full bg-white/5 hover:bg-white/10 text-white/60 hover:text-white transition-colors"
+          className="liquid-glass-pill absolute top-6 right-6 p-2 rounded-full text-white/60 hover:text-white transition-colors"
           aria-label="Close modal"
         >
           <X className="w-5 h-5" />
@@ -76,8 +76,8 @@ export default function PreOrderDrawer({ isOpen, onClose }) {
                     onClick={() => setSelectedColor(c.id)}
                     className={`p-3.5 rounded-2xl border text-left transition-all flex flex-col gap-2 ${
                       selectedColor === c.id
-                        ? 'bg-white/10 border-sony-cyan shadow-md shadow-sony-blue/20'
-                        : 'bg-white/[0.02] border-white/10 hover:border-white/20'
+                        ? 'liquid-glass-active !border-cyan-400'
+                        : 'liquid-glass hover:border-white/30'
                     }`}
                   >
                     <div 

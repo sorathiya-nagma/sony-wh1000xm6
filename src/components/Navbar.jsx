@@ -57,8 +57,8 @@ export default function Navbar({ onOpenPreOrder }) {
           </span>
         </div>
 
-        {/* Center: Frosted Capsule Pill Navigation */}
-        <nav className="hidden md:flex items-center bg-white/[0.08] backdrop-blur-2xl border border-white/10 rounded-full p-1 shadow-2xl shadow-black/60">
+        {/* Center: Frosted Capsule Pill Navigation with Liquid Glass */}
+        <nav className="hidden md:flex items-center liquid-glass-pill rounded-full p-1 shadow-2xl shadow-black/60">
           {navLinks.map((link) => {
             const isActive = activeTab === link.name;
             return (
@@ -67,7 +67,7 @@ export default function Navbar({ onOpenPreOrder }) {
                 onClick={() => handleLinkClick(link.name, link.id)}
                 className={`px-4 py-1.5 rounded-full text-xs font-medium tracking-normal transition-all duration-300 ${
                   isActive
-                    ? 'bg-white/20 text-white shadow-inner font-semibold'
+                    ? 'bg-gradient-to-b from-white/30 to-white/10 border border-white/30 text-white shadow-[inset_0_1px_1px_rgba(255,255,255,0.7)] font-semibold'
                     : 'text-white/60 hover:text-white'
                 }`}
               >

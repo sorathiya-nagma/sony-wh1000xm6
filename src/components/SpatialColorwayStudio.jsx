@@ -73,7 +73,7 @@ export default function SpatialColorwayStudio() {
           
           {/* Main Master Render Display */}
           <div className="lg:col-span-8">
-            <div className="glass-card rounded-3xl p-4 md:p-8 border border-white/10 bg-[#09090D] shadow-2xl relative overflow-hidden group">
+            <div className="liquid-glass rounded-3xl p-4 md:p-8 shadow-2xl relative overflow-hidden group">
               <div className="relative aspect-[16/9] w-full flex items-center justify-center overflow-hidden rounded-2xl bg-void">
                 <img
                   src={views.find(v => v.id === activeView)?.src}
@@ -115,10 +115,10 @@ export default function SpatialColorwayStudio() {
                 <div
                   key={f.id}
                   onClick={() => setSelectedFinish(f.id)}
-                  className={`p-6 rounded-3xl cursor-pointer transition-all duration-300 border ${
+                  className={`p-6 rounded-3xl cursor-pointer transition-all duration-300 ${
                     isSelected
-                      ? 'bg-sony-blue/15 border-sony-cyan/50 shadow-xl shadow-sony-blue/15 scale-[1.02]'
-                      : 'bg-white/[0.02] border-white/5 hover:border-white/15 hover:bg-white/[0.04]'
+                      ? 'liquid-glass-active scale-[1.02]'
+                      : 'liquid-glass hover:border-cyan-400/40 hover:-translate-y-0.5'
                   }`}
                 >
                   <div className="flex items-center justify-between mb-3">

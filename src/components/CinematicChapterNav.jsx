@@ -66,7 +66,7 @@ export default function CinematicChapterNav() {
         onMouseEnter={() => setIsExpanded(true)}
         onMouseLeave={() => setIsExpanded(false)}
       >
-        <div className={`glass-card rounded-2xl border border-white/10 bg-[#070B16]/90 backdrop-blur-2xl shadow-2xl transition-all duration-300 p-2 ${
+        <div className={`liquid-glass rounded-2xl backdrop-blur-2xl shadow-2xl transition-all duration-300 p-2 ${
           isExpanded ? 'w-64 sm:w-72 p-3' : 'w-auto'
         }`}>
           
@@ -114,7 +114,7 @@ export default function CinematicChapterNav() {
                     }}
                     className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-xl text-left transition-all duration-200 cursor-pointer ${
                       isActive
-                        ? 'bg-cyan-500/20 border border-cyan-400/60 shadow-[0_0_15px_rgba(0,214,255,0.25)] text-white'
+                        ? 'liquid-glass-active text-white shadow-[0_0_15px_rgba(0,214,255,0.35)]'
                         : 'text-white/60 hover:text-white hover:bg-white/5 border border-transparent'
                     }`}
                   >

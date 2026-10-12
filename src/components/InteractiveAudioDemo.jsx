@@ -247,10 +247,10 @@ export default function InteractiveAudioDemo() {
           {/* Card 1: Flagship Active NC */}
           <div
             onClick={() => handleModeChange('anc')}
-            className={`rounded-3xl p-7 md:p-8 cursor-pointer transition-all duration-400 relative overflow-hidden backdrop-blur-2xl flex flex-col justify-between min-h-[290px] ${
+            className={`rounded-3xl p-7 md:p-8 cursor-pointer transition-all duration-400 relative overflow-hidden flex flex-col justify-between min-h-[290px] ${
               activeMode === 'anc'
-                ? 'bg-gradient-to-b from-[#0038A8]/60 via-[#002060]/70 to-[#040814]/90 border-2 border-cyan-400 shadow-[0_20px_50px_rgba(0,0,0,0.9),_0_0_35px_rgba(0,214,255,0.5),_inset_0_1px_2px_rgba(255,255,255,0.4)] scale-[1.02]'
-                : 'bg-[#0B1020]/75 border border-cyan-500/30 hover:border-cyan-400/60 shadow-[0_15px_35px_rgba(0,0,0,0.8),_0_0_20px_rgba(0,214,255,0.12)] hover:-translate-y-1'
+                ? 'liquid-glass-active scale-[1.02]'
+                : 'liquid-glass hover:border-cyan-400/60 hover:-translate-y-1'
             }`}
           >
             {/* Top row: Icon + Engaged badge if active */}
@@ -286,10 +286,10 @@ export default function InteractiveAudioDemo() {
           {/* Card 2: Ambient Transparency */}
           <div
             onClick={() => handleModeChange('ambient')}
-            className={`rounded-3xl p-7 md:p-8 cursor-pointer transition-all duration-400 relative overflow-hidden backdrop-blur-2xl flex flex-col justify-between min-h-[290px] ${
+            className={`rounded-3xl p-7 md:p-8 cursor-pointer transition-all duration-400 relative overflow-hidden flex flex-col justify-between min-h-[290px] ${
               activeMode === 'ambient'
-                ? 'bg-gradient-to-b from-[#78350f]/50 via-[#451a03]/60 to-[#040814]/90 border-2 border-amber-400 shadow-[0_20px_50px_rgba(0,0,0,0.9),_0_0_35px_rgba(245,158,11,0.5),_inset_0_1px_2px_rgba(255,255,255,0.4)] scale-[1.02]'
-                : 'bg-[#0B1020]/75 border border-white/10 hover:border-amber-400/40 shadow-[0_15px_35px_rgba(0,0,0,0.8)] hover:-translate-y-1'
+                ? 'liquid-glass-active !border-amber-400/80 !shadow-[0_0_35px_rgba(245,158,11,0.5)] scale-[1.02]'
+                : 'liquid-glass hover:border-amber-400/40 hover:-translate-y-1'
             }`}
           >
             {/* Top row: Icon + Engaged badge if active */}
@@ -322,13 +322,13 @@ export default function InteractiveAudioDemo() {
             </div>
           </div>
 
-          {/* Card 3: Hi-Res Audio LDAC (Engaged State in reference image) */}
+          {/* Card 3: Hi-Res Audio LDAC */}
           <div
             onClick={() => handleModeChange('hires')}
-            className={`rounded-3xl p-7 md:p-8 cursor-pointer transition-all duration-400 relative overflow-hidden backdrop-blur-2xl flex flex-col justify-between min-h-[290px] ${
+            className={`rounded-3xl p-7 md:p-8 cursor-pointer transition-all duration-400 relative overflow-hidden flex flex-col justify-between min-h-[290px] ${
               activeMode === 'hires'
-                ? 'bg-gradient-to-b from-[#0038A8]/60 via-[#002060]/70 to-[#040814]/90 border-2 border-cyan-400 shadow-[0_20px_50px_rgba(0,0,0,0.9),_0_0_35px_rgba(0,102,255,0.7),_inset_0_1px_2px_rgba(255,255,255,0.4)] scale-[1.02]'
-                : 'bg-[#0B1020]/75 border border-cyan-500/30 hover:border-cyan-400/60 shadow-[0_15px_35px_rgba(0,0,0,0.8),_0_0_20px_rgba(0,214,255,0.12)] hover:-translate-y-1'
+                ? 'liquid-glass-active scale-[1.02]'
+                : 'liquid-glass hover:border-cyan-400/60 hover:-translate-y-1'
             }`}
           >
             {/* Top row: Icon + Engaged badge */}
@@ -362,7 +362,7 @@ export default function InteractiveAudioDemo() {
         </div>
 
         {/* Bottom Futuristic HUD Audio Waveform Deck matching reference image */}
-        <div className="rounded-2xl p-4 sm:p-6 border border-white/10 bg-[#070B16]/85 backdrop-blur-2xl shadow-2xl relative overflow-hidden">
+        <div className="liquid-glass rounded-2xl p-4 sm:p-6 shadow-2xl relative overflow-hidden">
           
           {/* High-tech corner telemetry marks */}
           <span className="absolute top-2 left-3 text-[9px] font-mono text-white/20 select-none">┌ 33.98</span>

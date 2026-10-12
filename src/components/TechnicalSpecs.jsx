@@ -94,7 +94,7 @@ export default function TechnicalSpecs() {
             return (
               <div 
                 key={cat.title} 
-                className="glass-card rounded-3xl p-6 md:p-10 border border-white/10 bg-[#09090D]/80 backdrop-blur-xl shadow-xl"
+                className="liquid-glass rounded-3xl p-6 md:p-10 shadow-xl"
               >
                 <div className="flex items-center gap-3 pb-6 mb-6 border-b border-white/10">
                   <div className="p-2.5 rounded-xl bg-sony-blue/20 text-sony-cyan border border-sony-cyan/30">

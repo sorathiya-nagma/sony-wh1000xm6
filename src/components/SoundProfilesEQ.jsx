@@ -152,7 +152,7 @@ export default function SoundProfilesEQ() {
         </div>
 
         {/* Holographic 3D Wireframe Curve Display Console */}
-        <div className="relative rounded-2xl p-4 sm:p-6 mb-8 bg-[#070B16]/90 border border-white/10 backdrop-blur-2xl shadow-2xl overflow-hidden">
+        <div className="liquid-glass relative rounded-2xl p-4 sm:p-6 mb-8 shadow-2xl overflow-hidden">
           
           {/* High-tech tick marks and telemetry markers on sides */}
           <div className="absolute top-3 left-4 text-[9px] font-mono text-white/20 select-none">
@@ -295,7 +295,7 @@ export default function SoundProfilesEQ() {
           {frequencies.map((freq, idx) => (
             <div
               key={freq}
-              className="rounded-3xl p-5 bg-[#0A0F1E]/80 border border-white/10 hover:border-cyan-400/40 shadow-xl backdrop-blur-xl flex flex-col items-center justify-between min-h-[260px] relative transition-all group"
+              className="liquid-glass rounded-3xl p-5 hover:border-cyan-400/40 shadow-xl flex flex-col items-center justify-between min-h-[260px] relative transition-all group"
             >
               {/* Notched side indentations */}
               <div className="absolute top-1/2 -left-1.5 -translate-y-1/2 w-3 h-6 bg-[#040711] rounded-r-full border-r border-white/10" />
@@ -327,7 +327,7 @@ export default function SoundProfilesEQ() {
           ))}
 
           {/* Module 6: CLEAR BASS™ (Active Engaged State matching screenshot) */}
-          <div className="rounded-3xl p-5 bg-gradient-to-b from-[#0038A8]/60 via-[#002060]/70 to-[#040814]/90 border-2 border-cyan-400 shadow-[0_0_30px_rgba(0,102,255,0.7),_inset_0_1px_2px_rgba(255,255,255,0.4)] backdrop-blur-xl flex flex-col items-center justify-between min-h-[260px] relative scale-[1.02] transition-all">
+          <div className="liquid-glass-active rounded-3xl p-5 shadow-[0_0_30px_rgba(0,102,255,0.7)] flex flex-col items-center justify-between min-h-[260px] relative scale-[1.02] transition-all">
             
             {/* Notched side indentations */}
             <div className="absolute top-1/2 -left-1.5 -translate-y-1/2 w-3 h-6 bg-[#040711] rounded-r-full border-r border-cyan-400/50" />

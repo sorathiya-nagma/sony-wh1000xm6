@@ -135,8 +135,8 @@ export default function EngineeringDeepDive() {
                   onClick={() => setActiveComponent(idx)}
                   className={`rounded-3xl p-5 md:p-6 cursor-pointer transition-all duration-300 relative overflow-hidden flex items-center gap-4 ${
                     isActive
-                      ? 'bg-gradient-to-r from-[#0050FF] via-[#0040D0] to-[#002B99] border-2 border-cyan-400 shadow-[0_0_30px_rgba(0,102,255,0.7),_inset_0_1px_2px_rgba(255,255,255,0.4)] scale-[1.02]'
-                      : 'bg-[#0B1020]/75 border border-white/10 hover:border-cyan-400/50 hover:bg-[#0F162B] shadow-[0_10px_25px_rgba(0,0,0,0.6)]'
+                      ? 'liquid-glass-active scale-[1.02]'
+                      : 'liquid-glass hover:border-cyan-400/50 hover:bg-[#0F162B] shadow-[0_10px_25px_rgba(0,0,0,0.6)]'
                   }`}
                 >
                   {/* Left Icon Graphic Container */}
@@ -191,7 +191,7 @@ export default function EngineeringDeepDive() {
 
           {/* Right Column: Futuristic Sci-Fi Dossier Terminal */}
           <div className="lg:col-span-7">
-            <div className="relative rounded-[28px] p-6 sm:p-8 md:p-10 bg-[#070C18]/90 border-2 border-cyan-400 shadow-[0_0_35px_rgba(0,214,255,0.25),_inset_0_1px_2px_rgba(255,255,255,0.2)] backdrop-blur-2xl">
+            <div className="liquid-glass relative rounded-[28px] p-6 sm:p-8 md:p-10 border-2 border-cyan-400 shadow-[0_0_35px_rgba(0,214,255,0.25)]">
               
               {/* Terminal Corner Tech Tick Marks */}
               <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-cyan-300 rounded-tl-lg" />

@@ -296,11 +296,11 @@ export default function ScrollytellingCanvas({ onOpenPreOrder }) {
             transform: `translateY(${(1 - beat1Opacity) * 15}px)`
           }}
         >
-          {/* Top-Left: Golden Badge Pill */}
+          {/* Top-Left: Golden Badge Pill with Liquid Glass */}
           <div className="pt-20 md:pt-24 self-start pointer-events-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-400/30 backdrop-blur-xl shadow-[0_0_20px_rgba(245,158,11,0.25)]">
+            <div className="liquid-glass-pill inline-flex items-center gap-2 px-4 py-1.5 rounded-full border-amber-400/40 shadow-[0_0_25px_rgba(245,158,11,0.3)]">
               <span className="text-amber-400 text-xs">✦</span>
-              <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-amber-200/90 font-semibold">
+              <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-amber-200/95 font-semibold">
                 THE NEXT REVOLUTION IN SILENCE
               </span>
             </div>
@@ -309,8 +309,8 @@ export default function ScrollytellingCanvas({ onOpenPreOrder }) {
           {/* Middle Row: Left HUD Card + Center Title + Right HUD Card */}
           <div className="w-full flex items-center justify-between my-auto relative">
             
-            {/* Left HUD Card: 30H BATTERY LIFE */}
-            <div className="hidden sm:flex glass-card rounded-2xl p-4 md:p-5 border border-white/10 backdrop-blur-2xl bg-[#0A0A0E]/60 shadow-2xl flex-col gap-1 w-36 md:w-44 pointer-events-auto transition-transform hover:scale-105">
+            {/* Left HUD Card: 30H BATTERY LIFE (Liquid Glass) */}
+            <div className="hidden sm:flex liquid-glass rounded-2xl p-4 md:p-5 flex-col gap-1 w-36 md:w-44 pointer-events-auto transition-transform hover:scale-105">
               <div className="flex items-center justify-between">
                 <span className="text-2xl md:text-3xl font-extrabold text-white font-mono tracking-tight">30H</span>
                 <Battery className="w-5 h-5 text-white/80" />
@@ -333,8 +333,8 @@ export default function ScrollytellingCanvas({ onOpenPreOrder }) {
               </p>
             </div>
 
-            {/* Right HUD Card: ACTIVE NOISE CANCELLING V2 */}
-            <div className="hidden sm:flex glass-card rounded-2xl p-4 md:p-5 border border-white/10 backdrop-blur-2xl bg-[#0A0A0E]/60 shadow-2xl flex-col gap-2 w-44 md:w-52 pointer-events-auto transition-transform hover:scale-105">
+            {/* Right HUD Card: ACTIVE NOISE CANCELLING V2 (Liquid Glass) */}
+            <div className="hidden sm:flex liquid-glass rounded-2xl p-4 md:p-5 flex-col gap-2 w-44 md:w-52 pointer-events-auto transition-transform hover:scale-105">
               {/* Dynamic waveform bars icon */}
               <div className="flex items-end gap-1.5 h-5 text-white/90">
                 <span className="w-1 bg-white/90 rounded-full h-3 animate-pulse"></span>
@@ -353,10 +353,10 @@ export default function ScrollytellingCanvas({ onOpenPreOrder }) {
           {/* Bottom Row: Order Now (Left) · SCROLL TO DECONSTRUCT ↓ (Center) · Explore Sound Demo ▶ (Right) */}
           <div className="w-full flex items-center justify-between pb-2 pointer-events-auto">
             
-            {/* Bottom-Left: Order Now Pill */}
+            {/* Bottom-Left: Order Now Pill with Liquid Glass */}
             <button
               onClick={onOpenPreOrder}
-              className="px-6 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-xl text-white text-xs font-semibold tracking-wide transition-all duration-300 shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
+              className="liquid-glass-pill px-6 py-2.5 rounded-full text-white text-xs font-semibold tracking-wide transition-all duration-300 shadow-lg hover:scale-105 active:scale-95 cursor-pointer"
             >
               Order Now
             </button>

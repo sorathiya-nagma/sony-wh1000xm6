@@ -177,8 +177,8 @@ export default function SmartComparisonTool({ onOpenPreOrder }) {
         {/* Two-Column Master Head-to-Head Deck */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-12">
           
-          {/* Left Column: SONY WH-1000XM6 (Hero Winner Deck) */}
-          <div className="lg:col-span-6 rounded-3xl p-6 sm:p-8 md:p-10 bg-gradient-to-b from-[#0038A8]/50 via-[#002060]/60 to-[#040814]/90 border-2 border-cyan-400 shadow-[0_0_35px_rgba(0,102,255,0.6),_inset_0_1px_2px_rgba(255,255,255,0.3)] backdrop-blur-2xl flex flex-col justify-between relative overflow-hidden">
+          {/* Left Column: SONY WH-1000XM6 (Hero Winner Deck - Liquid Glass Active) */}
+          <div className="lg:col-span-6 rounded-3xl p-6 sm:p-8 md:p-10 liquid-glass-active shadow-[0_0_40px_rgba(0,102,255,0.65)] flex flex-col justify-between relative overflow-hidden">
             
             {/* Top Badge */}
             <div className="flex items-center justify-between mb-6">
@@ -262,8 +262,8 @@ export default function SmartComparisonTool({ onOpenPreOrder }) {
             </div>
           </div>
 
-          {/* Right Column: Selected Competitor Head-to-Head Card */}
-          <div className="lg:col-span-6 rounded-3xl p-6 sm:p-8 md:p-10 bg-[#070B16]/90 border border-white/10 shadow-2xl backdrop-blur-2xl flex flex-col justify-between">
+          {/* Right Column: Selected Competitor Head-to-Head Card (Liquid Glass) */}
+          <div className="lg:col-span-6 rounded-3xl p-6 sm:p-8 md:p-10 liquid-glass shadow-2xl flex flex-col justify-between">
             
             {/* Top Badge */}
             <div className="flex items-center justify-between mb-6">
